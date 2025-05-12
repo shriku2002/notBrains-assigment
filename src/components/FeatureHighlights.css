@@ -1,0 +1,126 @@
+.feature-highlights {
+  background-color: #fff;
+  padding: var(--space-20) 0;
+}
+
+.feature-highlight {
+  display: flex;
+  align-items: center;
+  gap: var(--space-16);
+  margin-bottom: var(--space-20);
+  padding: 0 var(--space-8);
+}
+
+.feature-highlight:last-child {
+  margin-bottom: 0;
+}
+
+.feature-highlight.reversed {
+  flex-direction: row-reverse;
+}
+
+.feature-highlight-content {
+  flex: 1;
+  max-width: 480px;
+}
+
+.feature-highlight-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-highlight-image img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+}
+
+.feature-highlight-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: var(--space-4);
+  line-height: 1.2;
+}
+
+.feature-highlight-description {
+  font-size: 1.125rem;
+  color: var(--gray-600);
+  margin-bottom: var(--space-8);
+  line-height: 1.6;
+}
+
+.feature-highlight-list {
+  list-style: none;
+}
+
+.feature-highlight-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--space-4);
+  color: var(--gray-700);
+  font-size: 1.125rem;
+}
+
+.feature-highlight-item:last-child {
+  margin-bottom: 0;
+}
+
+.feature-highlight-icon {
+  width: 24px;
+  height: 24px;
+  background-color: var(--primary-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: var(--space-3);
+  color: var(--primary);
+}
+
+@media (max-width: 992px) {
+  .feature-highlight,
+  .feature-highlight.reversed {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-12);
+  }
+
+  .feature-highlight-content {
+    max-width: 100%;
+  }
+
+  .feature-highlight-list {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .feature-highlight-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-highlights {
+    padding: var(--space-12) 0;
+  }
+
+  .feature-highlight {
+    margin-bottom: var(--space-16);
+    padding: 0 var(--space-4);
+  }
+
+  .feature-highlight-title {
+    font-size: 1.75rem;
+  }
+
+  .feature-highlight-description {
+    font-size: 1rem;
+  }
+
+  .feature-highlight-item {
+    font-size: 1rem;
+  }
+}
